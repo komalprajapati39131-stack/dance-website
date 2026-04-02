@@ -1,0 +1,170 @@
+<!DOCTYPE html ><html><head><style> /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+#logo{
+  display: flex;
+  color:#823030;
+  align-items: center;
+  margin: 0 14px;
+  height: 40px;
+  width: auto;
+  font-size: 28px;
+  margin-right: 40px;
+
+  
+}
+
+#logo img{
+  height: 42px;
+ background-color:black
+}
+/* Navbar */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: white;
+
+    z-index: 10;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#navbar li {
+  margin: 0 20px;
+}
+
+#navbar a {
+  color: rgb(11, 13, 9);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  color: #ff4d6d;
+}
+
+/* Intro Section */
+#introSection {
+  height: 400px;
+  background: url('/static/dance.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(210, 30, 30);
+}
+
+#introSection h1 {
+  font-size: 40px;
+}
+
+#introSection p {
+  font-size: 20px;
+}
+#missionSection{
+    height: 300px;
+    background-color:white;
+    transition:0.3s ;
+} 
+#missionSection h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 42px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;   /* 👈 add this */
+    gap: 20px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 170px;
+    box-shadow: 0 8px 20px rgba(0,0,0.1);
+
+    display: flex;              /* 👈 add */
+    justify-content: center;    /* horizontal center */
+    overflow: hidden;  
+    transition: 0.3s; 
+}
+.card img{
+  width: 100%;
+  margin-bottom: 15px;
+  height: 120px;
+  object-fit: cover;  /* image stretch nahi hogi */
+}
+.card h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+
+
+/* Sponsors Section */
+#sponsorsSection{
+  padding: 50px;
+  text-align: center;
+  background: #493f3f;
+}
+
+#sponsors{
+  height: 120px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.spImage{
+  height: 80%;
+  margin: 20px;
+
+
+}
+
+/* Footer */
+#footer {
+  background: #111;
+  color: rgb(188, 52, 52);
+  text-align: center;
+  padding: 20px;
+  height: 60px;
+  
+}
+
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  color: #ff4d6d;
+}
+
+p {
+  margin-left: 20px;
+}
+
+h3 {
+  margin-top:0px;
+}</style></head><body> <nav id="navbar"> <ul><li id="logo"> <img src="/static/img/logo.png"/>HDA</li><li><a href="/home">Home</a></li><li><a href="/about">About </a></li><li><a href="/services">Services</a></li><li><a href="/class">Class Info </a></li><li><a href="/contact">Contact Us</a></li></ul></nav><section id="introSection"> <div><h2>Welcome to Komal's Dance Academy</h2><p>Eat Sleep Dance Repeat</p></div></section><section id="missionSection"> <h2>Our Mission</h2><div class="cards"><div class="card"> <img src="/static/img/danc1.png"/><h3>Dance Perfection</h3><p>Achieve perfection with expert guidance and practice.</p></div><div class="card"> <img src="/static/img/dance2.png"/><h3>Dance the way you like</h3><p>Learn freestyle and express yourself through dance.</p></div><div class="card"> <img src="/static/img/dance3.png"/><h3>Expert Teaching </h3><p>Professional trainers to guide you step by step.</p></div></div></section><section id="sponsorsSection"> <h2>Our Sponsors </h2><div id="sponsors"> <img class="spImage" src="/static/img/logo1.jpg" alt="sponsor image"/><img class="spImage" src="/static/img/logo2.png" alt="sponsor image"/><img class="spImage" src="/static/img/logo3.png" alt="sponsor image"/><img class="spImage" src="/static/img/logo4.png" alt="sponsor image"/></div></section><footer id="footer"> <copyright>2026 HarryDanceAcademy.com  | All rights reserved</copyright></footer><script> </script></body></html>

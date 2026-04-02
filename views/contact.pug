@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Contact
+    link(rel="stylesheet", href="/static/stylecontact.css")
+
+  body
+    .container
+      h1 Contact Us 📩
+
+      p Feel free to contact us for joining our dance classes.
+
+      p 📍 Location: Your City
+      p 📞 Phone: 9876543210
+      p 📧 Email: danceacademy@gmail.com
+
+      h2 Send us a message
+
+      form(action="/contact", method="POST")
+        input(type="text", name="name", placeholder="Your Name")
+        input(type="email", name="email", placeholder="Your Email")
+        textarea(name="message", placeholder="Your Message")
+        button(type="submit") Submit

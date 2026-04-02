@@ -1,0 +1,56 @@
+doctype html 
+html
+  head
+    style 
+      include ../static/style.css 
+
+  body 
+    nav#navbar 
+      ul
+        li#logo 
+          img(src="/static/img/logo.png")
+          | HDA
+
+        li: a(href="/home") Home
+        li: a(href="/about") About 
+        li: a(href="/services") Services
+        li: a(href="/class") Class Info 
+        li: a(href="/contact") Contact Us
+
+    section#introSection 
+      div
+        h2 Welcome to Komal's Dance Academy
+        p Eat Sleep Dance Repeat
+
+    section#missionSection 
+      h2 Our Mission
+
+      .cards
+        .card 
+          img(src="/static/img/danc1.png")
+          h3 Dance Perfection
+          p Achieve perfection with expert guidance and practice.
+
+        .card 
+          img(src="/static/img/dance2.png")
+          h3 Dance the way you like
+          p Learn freestyle and express yourself through dance.
+
+        .card 
+          img(src="/static/img/dance3.png")
+          h3 Expert Teaching 
+          p Professional trainers to guide you step by step.
+    
+    section#sponsorsSection 
+      h2 Our Sponsors 
+      div#sponsors 
+        img(src="/static/img/logo1.jpg", alt="sponsor image", class="spImage")
+        img(src="/static/img/logo2.png", alt="sponsor image", class="spImage")
+        img(src="/static/img/logo3.png", alt="sponsor image", class="spImage")
+        img(src="/static/img/logo4.png", alt="sponsor image", class="spImage")
+
+    footer#footer 
+         copyright 2026 HarryDanceAcademy.com  | All rights reserved
+
+    script 
+      include ../static/index.js
